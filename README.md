@@ -38,3 +38,11 @@ Porta: 1883
 Agora só configurar seu cliente para esse host e porta e fazer seus testes.
 
 <!-- ## Python -->
+
+# **Client**
+
+## Python 
+
+Neste link tem um tutorial bem completo de como utilizar o client com python 
+
+http://www.steves-internet-guide.com/into-mqtt-python-client/

@@ -8,6 +8,8 @@ var ws = require('websocket-stream')
 var port = 1883
 var wsPort = 8888
 
+// var topics = require("./topics")
+
 ws.createServer({
     server: httpServer
 }, aedes.handle)
