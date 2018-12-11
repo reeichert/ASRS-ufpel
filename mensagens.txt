@@ -1,0 +1,45 @@
+####FRESA####
+
+Para fresa fazer pedido:
+tópico: "fresa/pedidos"
+json: {"entidade":"eixo usinado"}
+pedido = "eixo usinado"
+pedido = json.dumps({"entidade":"eixo usinado"})
+
+MANAGER RESPONDE PRA FRESA:
+Tópico: 'fresa/resposta'
+json: {"entidade":entidade_x,"carro":carro_x,"pallet":pallet_x}
+#############
+
+
+####TORNO####
+Para torno fazer pedido:
+tópico: "torno/pedidos"
+json: {"entidade":"ENTIDADE DO PEDIDO"}
+
+MANAGER RESPONDE PRA TORNO
+Tópico: 'torno/resposta'
+json: {"entidade":entidade_x,"carro":carro_x,"pallet":pallet_x}
+
+#############
+
+
+
+####ASRS####
+
+MANAGER MANDA PEDIDO PRO ASRS:
+tópico: 'asrs/pedidos'
+json: {"est": x,"entidade":entidade requerida}
+
+Resposta do ASRS:
+tópico: 'asrs/responde'
+json: {'entidade':entidade_x,'carro':carro_n,'pallet':pallet_n,'est':estação}
+
+####TODOS####
+
+TROCAR ENTIDADE/PALLET/CARRINHO:
+tópico: 'carros/pallet/ent'
+json:  {'#carro':'carro_n','#pallet':'pallet_n','entidade':'entidade'}
+
+##serve pra atualizar o que tem no carro_n e pallet_n
+## EXEMPLO: Quando o torno usina uma peça e quer atualizar o que tem no pallet x

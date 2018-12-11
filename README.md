@@ -46,3 +46,12 @@ Agora só configurar seu cliente para esse host e porta e fazer seus testes.
 Neste link tem um tutorial bem completo de como utilizar o client com python 
 
 http://www.steves-internet-guide.com/into-mqtt-python-client/
+
+## NodeJS
+
+Em Node existe vários clients, basta procurar no github/google que vai encontrar 
+
+recomendo:
+- https://github.com/mqttjs/MQTT.js/
+- https://github.com/mqttjs/async-mqtt (retorna promises ao inves de callbacks)
+- http://www.steves-internet-guide.com/using-node-mqtt-client/
